@@ -1,0 +1,282 @@
+{
+	"id" : 3,
+	"companyUsername" : "kris",
+	"companyName" : "Krissoft",
+	"storageId" : 3,
+	"storageName" : "Garden",
+	"tableId" : 3,
+	"items" : [ 
+		{
+			"articleId" : "1",
+			"articleName" : "Coffee",
+			"amount" : "3",
+			"price" : 540
+		}, 
+		{
+			"articleId" : "5",
+			"articleName" : "Tuborg",
+			"amount" : "3",
+			"price" : 720
+		}, 
+		{
+			"articleId" : "7",
+			"articleName" : "Pizza",
+			"amount" : "4",
+			"price" : 680
+		}
+	],
+	"price" : 1940,
+	"active" : false,
+	"tax" : 316,
+	"change" : 60,
+	"customerID" : "111111111",
+	"date" : "2022-07-14",
+	"firstname" : "0",
+	"lastname" : "0",
+	"ordererUsername" : "",
+	"payed" : 2000,
+	"payingMethod" : "cash",
+	"slip" : ""
+}
+
+{
+	"id" : 8,
+	"companyUsername" : "kris",
+	"companyName" : "Krissoft",
+	"storageId" : 1,
+	"storageName" : "Main hall",
+	"tableId" : 3,
+	"items" : [ 
+		{
+			"articleId" : "8",
+			"articleName" : "Hamburger",
+			"amount" : "4",
+			"price" : 800
+		}, 
+		{
+			"articleId" : "3",
+			"articleName" : "Coca cola",
+			"amount" : "4",
+			"price" : 640
+		}
+	],
+	"price" : 1440,
+	"active" : false,
+	"tax" : 288,
+	"change" : 0,
+	"customerID" : "222222222",
+	"date" : "2022-07-14",
+	"firstname" : "Andrej",
+	"lastname" : "Gajic",
+	"ordererUsername" : "",
+	"payed" : 0,
+	"payingMethod" : "check",
+	"slip" : ""
+}
+
+{
+	"id" : 10,
+	"companyUsername" : "kris",
+	"companyName" : "Krissoft",
+	"storageId" : 2,
+	"storageName" : "Small hall",
+	"tableId" : 3,
+	"items" : [ 
+		{
+			"articleId" : "9",
+			"articleName" : "Ice cream",
+			"amount" : "5",
+			"price" : 550
+		}, 
+		{
+			"articleId" : "1",
+			"articleName" : "Coffee",
+			"amount" : "2",
+			"price" : 340
+		}
+	],
+	"price" : 890,
+	"active" : false,
+	"tax" : 178,
+	"change" : 0,
+	"customerID" : "333333333",
+	"date" : "2022-07-14",
+	"firstname" : "0",
+	"lastname" : "0",
+	"ordererUsername" : "",
+	"payed" : 0,
+	"payingMethod" : "card",
+	"slip" : "124124"
+}
+
+{
+	"id" : 7,
+	"companyUsername" : "kris",
+	"companyName" : "Krissoft",
+	"storageId" : 1,
+	"storageName" : "Main hall",
+	"tableId" : 2,
+	"items" : [ 
+		{
+			"articleId" : "5",
+			"articleName" : "Tuborg",
+			"amount" : "4",
+			"price" : 800
+		}, 
+		{
+			"articleId" : "7",
+			"articleName" : "Pizza",
+			"amount" : "4",
+			"price" : 600
+		}, 
+		{
+			"articleId" : "2",
+			"articleName" : "Rosa",
+			"amount" : "2",
+			"price" : 200
+		}
+	],
+	"price" : 1600,
+	"active" : false,
+	"tax" : 240,
+	"change" : 8400,
+	"customerID" : "111111111",
+	"date" : "2022-07-14",
+	"firstname" : "0",
+	"lastname" : "0",
+	"ordererUsername" : "",
+	"payed" : 10000,
+	"payingMethod" : "cash",
+	"slip" : ""
+}
+
+{
+	"id" : 5,
+	"companyUsername" : "kris",
+	"companyName" : "Krissoft",
+	"storageId" : 2,
+	"storageName" : "Small hall",
+	"tableId" : 1,
+	"items" : [ 
+		{
+			"articleId" : "1",
+			"articleName" : "Coffee",
+			"amount" : "2",
+			"price" : 340
+		}, 
+		{
+			"articleId" : "2",
+			"articleName" : "Rosa",
+			"amount" : "2",
+			"price" : 220
+		}
+	],
+	"price" : 560,
+	"active" : false,
+	"tax" : 112,
+	"change" : 40,
+	"customerID" : "222222222",
+	"date" : "2022-07-14",
+	"firstname" : "0",
+	"lastname" : "0",
+	"ordererUsername" : "",
+	"payed" : 600,
+	"payingMethod" : "cash",
+	"slip" : ""
+}
+
+{
+	"id" : 14,
+	"companyUsername" : "kris",
+	"companyName" : "Krissoft",
+	"storageId" : 3,
+	"storageName" : "Garden",
+	"tableId" : 3,
+	"items" : [ 
+		{
+			"articleId" : "10",
+			"articleName" : "Smirnoff",
+			"amount" : "4",
+			"price" : 1280
+		}, 
+		{
+			"articleId" : "12",
+			"articleName" : "Fresh orange juice",
+			"amount" : "2",
+			"price" : 680
+		}, 
+		{
+			"articleId" : "9",
+			"articleName" : "Ice cream",
+			"amount" : "1",
+			"price" : 120
+		}
+	],
+	"price" : 2080,
+	"active" : false,
+	"tax" : 416,
+	"change" : 0,
+	"customerID" : "111111",
+	"date" : "2022-07-14",
+	"firstname" : "0",
+	"lastname" : "0",
+	"ordererUsername" : "",
+	"payed" : 0,
+	"payingMethod" : "card",
+	"slip" : "565154"
+}
+
+{
+	"id" : 22,
+	"companyUsername" : "kris",
+	"companyName" : "Krissoft",
+	"storageId" : 3,
+	"storageName" : "Garden",
+	"tableId" : 2,
+	"items" : [ 
+		{
+			"articleId" : "8",
+			"articleName" : "Hamburger",
+			"amount" : "3",
+			"price" : 720
+		}, 
+		{
+			"articleId" : "5",
+			"articleName" : "Tuborg",
+			"amount" : "3",
+			"price" : 720
+		}
+	],
+	"price" : 1440,
+	"active" : false,
+	"tax" : 216,
+	"change" : 0,
+	"customerID" : "",
+	"date" : "2022-07-14",
+	"firstname" : "0",
+	"lastname" : "0",
+	"ordererUsername" : "dimca",
+	"payed" : 0,
+	"payingMethod" : "virman",
+	"slip" : ""
+}
+
+{
+	"id" : 21,
+	"companyUsername" : "kris",
+	"companyName" : "Krissoft",
+	"storageId" : 1,
+	"storageName" : "Main hall",
+	"tableId" : 3,
+	"items" : [ 
+		{
+			"articleId" : "13",
+			"articleName" : "Burrito",
+			"amount" : "3",
+			"price" : 1200
+		}
+	],
+	"price" : 1200,
+	"active" : true,
+	"tax" : 240
+}

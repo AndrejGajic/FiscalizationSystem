@@ -1,0 +1,17 @@
+{
+	"companyUsername" : "kris",
+	"companyName" : "Krissoft",
+	"pib" : "123456789",
+	"date" : "2022-07-14",
+	"price" : 9950,
+	"tax" : 1766,
+}
+
+{
+	"companyUsername" : "kris",
+	"companyName" : "Krissoft",
+	"pib" : "123456789",
+	"date" : "2022-07-13",
+	"price" : 3000,
+	"tax" : 600
+}

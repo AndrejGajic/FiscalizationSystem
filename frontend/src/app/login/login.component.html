@@ -1,0 +1,107 @@
+<div class="container-fluid">
+    <ul class="nav justify-content-center navbar-light bg-light">
+        <li class="nav-item">
+            <a class="nav-link active bold" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="register">Register</a>
+        </li>
+    </ul>
+    <br><br>
+    <div class="row">
+        <div class="col-sm-3">
+            &nbsp;
+        </div>  
+        <div class="col-sm-6">
+            <ng-template #content let-modal>
+                <div class="modal-header">
+                  <h4 class="modal-title" id="modal-basic-title">Bill info</h4>
+                  <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-stripped table-bordered table-hover">
+                        <tbody>
+                            <tr>
+                                <td>Location: </td>
+                                <td>{{currBill.storageName}}</td>
+                            </tr>
+                            <tr>
+                                <td>Method of paying: </td>
+                                <td>{{currBill.payingMethod}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-stripped table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <td>#</td>
+                                <td>Article ID </td>
+                                <td>Article name </td>
+                                <td>Amount </td>
+                                <td>Item price </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of currItems; let i = index">
+                                <td>{{i+1}}</td>
+                                <td>{{item.articleId}}</td>
+                                <td>{{item.articleName}}</td>
+                                <td>{{item.amount}}</td>
+                                <td>{{item.price}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </ng-template>
+            <h4 class="centerClass">Login</h4>
+            <div class="form-group">
+                <label for="username">Username: </label>
+                <input type="text" class="form-control" id="username" placeholder="Enter your username"  
+                [(ngModel)]="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password: </label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" 
+                [(ngModel)] = "password">
+            </div>
+            <br>
+            <div class="centerClass">
+                <button class="btn btn-primary" (click)="login()">&nbsp;&nbsp;Login&nbsp;&nbsp;</button>
+            </div>
+            <br><br>
+            <div class="centerClass">
+                <span class="alert alert-danger" *ngIf="errorMessage!=''">{{errorMessage}}</span>
+            </div>
+            <br>
+            <h4 class="centerClass">Last 5 bills: </h4>
+            <br>
+            <table class="table table-stripped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <td>Bill ID </td>
+                        <td>Bill date </td>
+                        <td>Bill price </td>
+                        <td>Bill tax </td>
+                        <td>See more info</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let bill of bills">
+                        <td>{{bill.id}}</td>
+                        <td>{{bill.date}}</td>
+                        <td>{{bill.price}}</td>
+                        <td>{{bill.tax}}</td>
+                        <td><button class="btn btn-primary" (click)="open(bill.id, content)">See items of this bill</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br><br><br>
+        </div>
+        <div class="col-sm-3">
+            &nbsp;
+        </div>
+    </div>
+</div>

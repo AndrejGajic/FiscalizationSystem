@@ -1,0 +1,17 @@
+{
+	"username" : "andrej",
+	"password" : "Andrej123!",
+	"firstname" : "Andrej",
+	"lastname" : "Gajic",
+	"phone" : "0649182131",
+	"customerID" : "111111111",
+}
+
+{
+	"username" : "customer",
+	"password" : "Customer123!",
+	"firstname" : "Customer",
+	"lastname" : "Customer",
+	"phone" : "0655555555",
+	"customerID" : "222222222",
+}

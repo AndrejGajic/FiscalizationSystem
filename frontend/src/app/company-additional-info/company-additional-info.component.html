@@ -1,0 +1,157 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3">
+            &nbsp;
+        </div>
+        <div class="col-sm-6">
+            <br>
+            <h3 style="text-align: center">Please insert additional info about your company</h3>
+            <br>
+            <div *ngIf="!addedInfo">
+                <table class="table table-stripped table-hover">
+                    <tbody>
+                        <tr>
+                            <td>Category of your company: </td>
+                            <td>
+                                <select name="category" id="category" [(ngModel)]="category">
+                                    <option value="shop">Shop </option>
+                                    <option value="catering facility">Catering facility</option>
+                                </select>
+                            </td>
+    
+                        </tr>
+                        <tr>
+                            <td>Work codes: </td>
+                            <td>
+                                <select name="codes" id="codes" size="3" multiple [(ngModel)]="codes">
+                                    <option *ngFor="let code of allCodes" [value]="code">
+                                        {{code}}
+                                    </option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Is your company in PDV system? </td>
+                            <td><input type="checkbox" id="pdv" [(ngModel)]="pdv"> Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Your bank accounts (your company must have at least one): </td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <th>Account number </th>
+                                        <th>Bank </th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" [(ngModel)]="account1"></td>
+                                        <td><input type="text" [(ngModel)]="bank1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" [(ngModel)]="account2"></td>
+                                        <td><input type="text" [(ngModel)]="bank2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" [(ngModel)]="account3"></td>
+                                        <td><input type="text" [(ngModel)]="bank3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" [(ngModel)]="account4"></td>
+                                        <td><input type="text" [(ngModel)]="bank4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" [(ngModel)]="account5"></td>
+                                        <td><input type="text" [(ngModel)]="bank5"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Number of objects (storages) you have: </td>
+                            <td><input type="text" class="form-control" id="numOfStorages" placeholder="Enter desired number of storages" [(ngModel)] = "numOfStorages"></td>
+                        </tr>
+                        <tr>
+                            <td>Number of cash registers you own: </td>
+                            <td><input type="text" class="form-control" id="numOfCashRegisters" placeholder="Enter number of cash registers you own" [(ngModel)] = "numOfCashRegisters"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <div style="text-align: center">
+                    <button class="btn btn-primary" (click)="updateInfo()">Update info</button>
+                </div>
+                <br>
+            </div>
+            <div *ngIf="!addedStorages&&addedInfo">
+                <table class="table table-stripped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Explanation </th>
+                            <th>Object(storage) id </th>
+                            <th>Object(storage) name </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let i of storagesTemp">
+                            <td>Insert information about an object(storage) {{i+1}}</td>
+                            <td><input type="text" [(ngModel)]="storageIds[i]"></td>
+                            <td><input type="text" [(ngModel)]="storageNames[i]"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <div class="centerClass">
+                    <button class="btn btn-primary" (click)="addStorages()">Add storages</button>
+                </div>
+            </div>
+            <div *ngIf="!addedRegisters&&addedStorages&&addedInfo">
+                <table class="table table-stripped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Explanation </th>
+                            <th>Location of object </th>
+                            <th>Type of cash register</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let i of registersTemp">
+                            <td>Insert information about cash register {{i+1}}</td>
+                            <td><input type="text" [(ngModel)]="registerLocations[i]"></td>
+                            <td>
+                                <select name="registerType" id="registerType" [(ngModel)]="registerTypes[i]">
+                                    <option value="IBM">IBM</option>
+                                    <option value="Comtrade">Comtrade</option>
+                                    <option value="Gigatron">Gigatron</option>
+                                    <option value="DigitGroup">DigitGroup </option>
+                                    <option value="GALEB">GALEB</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <div class="centerClass">
+                    <button class="btn btn-primary" (click)="addCashRegisters()">Add cash registers</button>
+                </div>
+            </div> 
+            <br>
+            <div *ngIf="!addedStorages&&addedInfo">
+                Step before: &nbsp; &nbsp; &nbsp; <button class="btn btn-secondary" (click)="returnToFirstStep()">Return one step</button>
+            </div>
+            <div *ngIf="!addedRegisters&&addedStorages&&addedInfo">
+                Step before: &nbsp; &nbsp; &nbsp; <button class="btn btn-secondary" (click)="returnToSecondStep()">Return one step</button>
+            </div>
+            <div style="text-align:right">
+                Do it later: &nbsp; &nbsp; &nbsp;<a href="#" (click)="logout($event)">Log out</a>
+            </div>
+            <br>
+            <div style="text-align: center">
+                <span class="alert alert-danger" *ngIf="errorMessage!=''">{{errorMessage}}</span>
+                <span class="alert alert-success" *ngIf="successMessage!=''">{{successMessage}}</span>
+            </div>
+            <br><br><br><br>
+        </div>
+        <div class="col-sm-3">
+            &nbsp;
+        </div>
+    </div>
+</div>

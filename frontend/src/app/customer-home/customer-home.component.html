@@ -1,0 +1,101 @@
+<div class="container-fluid">
+    <ul class="nav justify-content-center navbar-light bg-light">
+        <li class="nav-item">
+            <a class="nav-link active bold" href="#">Companies and articles</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="customer-bills">Bills</a>
+        </li>
+        <li>
+            <a class="nav-link" href="change-password">Change password</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" (click)="logout($event)">Log out</a>
+        </li>
+    </ul>
+    <br><br>
+    <div class="row">
+        <div class="col-sm-2">
+            &nbsp;
+        </div>
+        <div class="col-sm-8">
+            <h4 class="centerClass">Companies</h4>
+            <br>
+            <table class="table table-stripped table-bordered table-hover">
+               <thead>
+                    <tr>
+                        <th>Company name </th>
+                        <th>Company username </th>
+                        <th>Company type </th>
+                        <th>Company PIB </th>
+                    </tr>
+               </thead>
+               <tbody>
+                    <tr *ngFor="let company of companies">
+                        <td>{{company.company_name}}</td>
+                        <td>{{company.username}}</td>
+                        <td>{{company.category}}</td>
+                        <td>{{company.pib}}</td>
+                    </tr>
+               </tbody>
+            </table>
+            <br>
+            <h4 class="centerClass">Search for articles</h4>
+            <br>
+            <table class="table table-stripped table-bordered table-hover">
+               <tbody>
+                    <tr>
+                        <td>Article name: </td>
+                        <input type="text" [(ngModel)]="articleName">
+                    </tr>
+                    <tr>
+                        <td>Article manufacturer: </td>
+                        <input type="text" [(ngModel)]="articleManufacturer">
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="centerClass">
+                            <button class="btn btn-warning" (click)="loadArticles()">Search</button>
+                        </td>
+                    </tr>
+               </tbody>
+            </table>
+            <br>
+            <div *ngIf="articles.length > 0">
+                <br>
+                <h4 class="centerClass">Found articles</h4>
+                <br>
+                <table class="table table-stripped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Article ID </th>
+                            <th>Article name </th>
+                            <th>Company name </th>
+                            <th>Article manufacturer </th>
+                            <th>Minimal prices </th>
+                            <th>Locations of article </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let article of articles; let i = index;">
+                            <td>{{article.id}}</td>
+                            <td>{{article.name}}</td>
+                            <td>{{companyNames[i]}}</td>
+                            <td>{{article.manufacturer}}</td>
+                            <td>{{minPrices[i]}}</td>
+                            <td>{{locations[i]}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+            </div>
+            <div style="text-align: center">
+                <span class="alert alert-danger" *ngIf="errorMessage!=''">{{errorMessage}}</span>
+                <span class="alert alert-success" *ngIf="successMessage!=''">{{successMessage}}</span>
+            </div>
+            <br><br><br><br>
+        </div>
+        <div class="col-sm-2">
+            &nbsp;
+        </div>
+    </div>
+</div>

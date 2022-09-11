@@ -1,0 +1,41 @@
+.parentDiv {
+    background-color: lightblue;
+    position: relative;
+    width: 600px;
+    height: 400px;
+    text-align: center;
+}
+
+.childDiv {
+    background-color: brown;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 5px;
+}
+
+.child1 {
+    top: 50px;
+    left: 50px;
+}
+
+.child2 {
+    top: 200px;
+    left: 50px;
+}
+
+.child3 {
+    top: 50px;
+    left: 200px;
+}
+
+.child4 {
+    top: 150px;
+    left: 400px;
+    border-radius: 50px;
+}
+
+.child5 {
+    top: 200px;
+    left: 200px;
+}

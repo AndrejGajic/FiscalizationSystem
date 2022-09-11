@@ -1,0 +1,218 @@
+<div class="container-fluid">
+    <ul class="nav justify-content-center navbar-light bg-light">
+        <li class="nav-item">
+            <img [src]="company.image" height="60px" width="60px" style="margin-right: 50px;">
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="company-home">About company</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="company-orderers">Orderers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="company-goods">Goods and services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="company-articles">Article arrangement</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="company-tables">Table arrangement</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active bold" href="#">Bills</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="company-reports">Reports</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="change-password">Change password</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" (click)="logout($event)">Log out</a>
+        </li>
+    </ul>
+    <br><br>
+    <div class="row">
+        <div class="col-sm-2">
+            &nbsp;
+        </div>
+        <ng-template #content let-modal>
+            <div class="modal-header">
+              <h4 class="modal-title" id="modal-basic-title">Add item to bill</h4>
+              <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+            </div>
+            <div class="modal-body">
+                <div *ngIf="activeModal==1">
+                    <table class="table table-stripped table-bordered table-hover">
+                        <tbody>
+                            <tr>
+                                <td>Article name: </td>
+                                <td>
+                                    <select [(ngModel)]="articleId" (change)="setArticleInfo()">
+                                        <option *ngFor="let article of articlesInfo" [value]="article.id">
+                                            {{article.name}}
+                                        </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Amount: </td>
+                                <td><input type="text" [(ngModel)]="amount"></td>
+                            </tr>
+                            <tr>
+                                <td>Price per unit of measurement: </td>
+                                <td *ngIf="articleInfo">{{articleInfo.sellPrice}}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button class="btn btn-secondary" (click)="addItem()">Add item to bill</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div *ngIf="activeModal==2">
+                    <table class="table table-stripped table-bordered table-hover">
+                        <tbody>
+                            <tr>
+                                <td>Paying method: </td>
+                                <td>
+                                    <select [(ngModel)]="payingMethod">
+                                        <option value="cash">Cash</option>
+                                        <option value="check">Check</option>
+                                        <option value="card">Credit card</option>
+                                        <option value="virman">Virman</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr *ngIf="payingMethod=='cash'||payingMethod=='check'||payingMethod=='card'">
+                                <td>ID number: </td>
+                                <td><input type="text" [(ngModel)]="customerID"></td>
+                            </tr>
+                            <tr *ngIf="payingMethod=='cash'">
+                                <td>Customer money (how much customer payed): </td>
+                                <input type="text" [(ngModel)]="payed">
+                            </tr>
+                            <tr *ngIf="payingMethod=='check'">
+                                <td>Customer first name: </td>
+                                <td><input type="text" [(ngModel)]="firstname"></td>
+                            </tr>
+                            <tr *ngIf="payingMethod=='check'">
+                                <td>Customer last name: </td>
+                                <td><input type="text" [(ngModel)]="lastname"></td>
+                            </tr>
+                            <tr *ngIf="payingMethod=='card'">
+                                <td>Slip account number: </td>
+                                <td><input type="text" [(ngModel)]="slip"></td>
+                            </tr>
+                            <tr *ngIf="payingMethod=='virman'">
+                                <td>Orderer username: </td>
+                                <td>
+                                    <select [(ngModel)]="ordererUsername">
+                                        <option *ngFor="let orderer of company.orderers" [value]="orderer.username">
+                                            {{orderer.username}}
+                                        </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button class="btn btn-success" (click)="finishBill()">
+                                        Finalize bill
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </ng-template>
+        <div class="col-sm-8 centerClass">
+            <h4 class="centerClass">Active bills</h4>
+            <br>
+            <div *ngIf="bills.length == 0">
+                <table class="table centerClass">
+                    <tr>
+                        <td style="color: blue;">No active bills at the moment!</td>
+                    </tr>
+                </table>
+            </div>
+            <div *ngIf="bills.length > 0">
+                <table class="table table-stripped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Bill ID </th>
+                            <th>Storage ID </th>
+                            <th>Table ID </th>
+                            <th>Current price </th>
+                            <th>Current tax </th>
+                            <th>Add new item </th>
+                            <th>Finalize bill </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let bill of bills">
+                            <td>{{bill.id}}</td>
+                            <td>{{bill.storageId}}</td>
+                            <td>{{bill.tableId}}</td>
+                            <td>{{bill.price}}</td>
+                            <td>{{bill.tax}}</td>
+                            <td>
+                                <button class="btn btn-secondary" (click)="open(bill.id, bill.storageId, bill.tableId, content, 1)">Add new item</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-success" (click)="open(bill.id, bill.storageId, bill.tableId, content, 2)">Finalize bill </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h4 class="centerClass">Add a new bill</h4>
+            <br>
+            <table class="table table-stripped table-bordered table-hover">
+                <tbody>
+                    <tr>
+                        <td>Bill ID: </td>
+                        <td><input type="text" [(ngModel)]="newBillID"></td>
+                    </tr>
+                    <tr>
+                        <td>Object (storage) ID: </td>
+                        <td>
+                            <select [(ngModel)]="newBillStorageID" (change)="loadStorage()">
+                                <option *ngFor='let storage of company.storages' [value]="storage.id">
+                                    {{storage.name}}
+                                </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Table ID: </td>
+                        <td>
+                            <select [(ngModel)]="newBillTableID">
+                                <option *ngFor='let table of currTables' [value]="table.id">
+                                    {{table.id}}
+                                </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="btn btn-success" (click)="addBill()">Add new bill</button>
+                        </td>
+                    </tr>
+                </tbody> 
+            </table>
+            <br>
+            <div class="centerClass">
+                <span class="alert alert-danger" *ngIf="errorMessage!=''">{{errorMessage}}</span>
+                <span class="alert alert-success" *ngIf="successMessage!=''">{{successMessage}}</span>
+            </div>
+            <br><br><br><br>
+        </div>
+        <div class="col-sm-2">
+            &nbsp;
+        </div>
+    </div>
+</div>

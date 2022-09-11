@@ -1,0 +1,881 @@
+{
+	"firstname" : "Kristina",
+	"lastname" : "Savic",
+	"username" : "kris",
+	"password" : "Kris123!",
+	"phone" : "0616491587",
+	"email" : "kristina.savic37@gmail.com",
+	"company_name" : "Krissoft",
+	"state" : "Serbia",
+	"city" : "Belgrade",
+	"postal_code" : "11000",
+	"street" : "Spanskih Boraca",
+	"street_number" : "30",
+	"pib" : "123456789",
+	"company_number" : "111",
+	"image" : "data:image/jpeg;base64,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",
+	"verified" : 1,
+	"active" : true,
+	"category" : "catering facility",
+	"codes" : [ 
+		"111111", 
+		"777777"
+	],
+	"isPDV" : true,
+	"bankAccounts" : [ 
+		{
+			"account" : "111-111111111111-11",
+			"bank" : "Unicredit"
+		}, 
+		{
+			"account" : "222-222222222222-22",
+			"bank" : "Postanska stedionica"
+		}
+	],
+	"numOfStorages" : 4,
+	"storages" : [ 
+		{
+			"id" : "1",
+			"name" : "Main hall",
+			"articles" : [ 
+				{
+					"id" : "1",
+					"name" : "Coffee",
+					"purchasePrice" : "50",
+					"sellPrice" : "150",
+					"currentStock" : "4000",
+					"minDesiredStockStorage" : "3000",
+					"maxDesiredStockStorage" : "5000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "2",
+					"name" : "Rosa",
+					"purchasePrice" : "30",
+					"sellPrice" : "100",
+					"currentStock" : "5000",
+					"minDesiredStockStorage" : "4000",
+					"maxDesiredStockStorage" : "6000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "3",
+					"name" : "Coca cola",
+					"purchasePrice" : "100",
+					"sellPrice" : "160",
+					"currentStock" : "3000",
+					"minDesiredStockStorage" : "2000",
+					"maxDesiredStockStorage" : "4000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "4",
+					"name" : "Fanta",
+					"purchasePrice" : "100",
+					"sellPrice" : "150",
+					"currentStock" : "3000",
+					"minDesiredStockStorage" : "2000",
+					"maxDesiredStockStorage" : "4000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "5",
+					"name" : "Tuborg",
+					"purchasePrice" : "130",
+					"sellPrice" : "200",
+					"currentStock" : "4000",
+					"minDesiredStockStorage" : "3000",
+					"maxDesiredStockStorage" : "4500",
+					"taxRate" : "10"
+				}, 
+				{
+					"id" : "6",
+					"name" : "Vranac",
+					"purchasePrice" : "70",
+					"sellPrice" : "120",
+					"currentStock" : "4000",
+					"minDesiredStockStorage" : "3000",
+					"maxDesiredStockStorage" : "5000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "7",
+					"name" : "Pizza",
+					"purchasePrice" : "100",
+					"sellPrice" : "150",
+					"currentStock" : "5000",
+					"minDesiredStockStorage" : "4000",
+					"maxDesiredStockStorage" : "6000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "8",
+					"name" : "Hamburger",
+					"purchasePrice" : "100",
+					"sellPrice" : "200",
+					"currentStock" : "6000",
+					"minDesiredStockStorage" : "5000",
+					"maxDesiredStockStorage" : "7000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "9",
+					"name" : "Ice cream",
+					"purchasePrice" : "60",
+					"sellPrice" : "100",
+					"currentStock" : "6000",
+					"minDesiredStockStorage" : "5000",
+					"maxDesiredStockStorage" : "7000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "10",
+					"name" : "Smirnoff",
+					"purchasePrice" : "150",
+					"sellPrice" : "300",
+					"currentStock" : "4000",
+					"minDesiredStockStorage" : "3000",
+					"maxDesiredStockStorage" : "5000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "11",
+					"name" : "Brandy",
+					"purchasePrice" : "50",
+					"sellPrice" : "150",
+					"currentStock" : "5000",
+					"minDesiredStockStorage" : "4000",
+					"maxDesiredStockStorage" : "6000",
+					"taxRate" : "10"
+				}, 
+				{
+					"id" : "12",
+					"name" : "Fresh orange juice",
+					"purchasePrice" : "150",
+					"sellPrice" : "300",
+					"currentStock" : "5000",
+					"minDesiredStockStorage" : "4000",
+					"maxDesiredStockStorage" : "6000",
+					"taxRate" : "20"
+				}
+			],
+			"tables" : [ 
+				{
+					"id" : "1",
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : "2",
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : "3",
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : "4",
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : "5",
+					"shape" : "circle",
+					"busy" : false
+				}
+			]
+		}, 
+		{
+			"id" : "2",
+			"name" : "Small hall",
+			"articles" : [ 
+				{
+					"id" : "1",
+					"name" : "Coffee",
+					"purchasePrice" : "50",
+					"sellPrice" : "170",
+					"currentStock" : "2000",
+					"minDesiredStockStorage" : "1000",
+					"maxDesiredStockStorage" : "3000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "2",
+					"name" : "Rosa",
+					"purchasePrice" : "30",
+					"sellPrice" : "110",
+					"currentStock" : "3000",
+					"minDesiredStockStorage" : "2000",
+					"maxDesiredStockStorage" : "4000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "3",
+					"name" : "Coca cola",
+					"purchasePrice" : "100",
+					"sellPrice" : "170",
+					"currentStock" : "2000",
+					"minDesiredStockStorage" : "1500",
+					"maxDesiredStockStorage" : "3000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "4",
+					"name" : "Fanta",
+					"purchasePrice" : "100",
+					"sellPrice" : "160",
+					"currentStock" : "2000",
+					"minDesiredStockStorage" : "1000",
+					"maxDesiredStockStorage" : "2500",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "5",
+					"name" : "Tuborg",
+					"purchasePrice" : "130",
+					"sellPrice" : "220",
+					"currentStock" : "2000",
+					"minDesiredStockStorage" : "1000",
+					"maxDesiredStockStorage" : "3000",
+					"taxRate" : "10"
+				}, 
+				{
+					"id" : "6",
+					"name" : "Vranac",
+					"purchasePrice" : "70",
+					"sellPrice" : "130",
+					"currentStock" : "2000",
+					"minDesiredStockStorage" : "2000",
+					"maxDesiredStockStorage" : "3000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "7",
+					"name" : "Pizza",
+					"purchasePrice" : "100",
+					"sellPrice" : "160",
+					"currentStock" : "4000",
+					"minDesiredStockStorage" : "3000",
+					"maxDesiredStockStorage" : "5000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "8",
+					"name" : "Hamburger",
+					"purchasePrice" : "100",
+					"sellPrice" : "220",
+					"currentStock" : "4000",
+					"minDesiredStockStorage" : "4000",
+					"maxDesiredStockStorage" : "6000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "9",
+					"name" : "Ice cream",
+					"purchasePrice" : "60",
+					"sellPrice" : "110",
+					"currentStock" : "4000",
+					"minDesiredStockStorage" : "3000",
+					"maxDesiredStockStorage" : "4500",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "10",
+					"name" : "Smirnoff",
+					"purchasePrice" : "150",
+					"sellPrice" : "310",
+					"currentStock" : "3000",
+					"minDesiredStockStorage" : "2000",
+					"maxDesiredStockStorage" : "4000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "11",
+					"name" : "Brandy",
+					"purchasePrice" : "50",
+					"sellPrice" : "150",
+					"currentStock" : "4000",
+					"minDesiredStockStorage" : "3000",
+					"maxDesiredStockStorage" : "5000",
+					"taxRate" : "10"
+				}, 
+				{
+					"id" : "12",
+					"name" : "Fresh orange juice",
+					"purchasePrice" : "150",
+					"sellPrice" : "320",
+					"currentStock" : "4000",
+					"minDesiredStockStorage" : "3000",
+					"maxDesiredStockStorage" : "5000",
+					"taxRate" : "20"
+				}
+			],
+			"tables" : [ 
+				{
+					"id" : "1",
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : "2",
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : "3",
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : "4",
+					"shape" : "circle",
+					"busy" : false
+				}
+			]
+		}, 
+		{
+			"id" : "3",
+			"name" : "Garden",
+			"articles" : [ 
+				{
+					"id" : "1",
+					"name" : "Coffee",
+					"purchasePrice" : "50",
+					"sellPrice" : "180",
+					"currentStock" : "1500",
+					"minDesiredStockStorage" : "1000",
+					"maxDesiredStockStorage" : "2000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "2",
+					"name" : "Rosa",
+					"purchasePrice" : "30",
+					"sellPrice" : "120",
+					"currentStock" : "1000",
+					"minDesiredStockStorage" : "1000",
+					"maxDesiredStockStorage" : "2000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "3",
+					"name" : "Coca cola",
+					"purchasePrice" : "100",
+					"sellPrice" : "180",
+					"currentStock" : "1500",
+					"minDesiredStockStorage" : "1500",
+					"maxDesiredStockStorage" : "3000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "4",
+					"name" : "Fanta",
+					"purchasePrice" : "100",
+					"sellPrice" : "170",
+					"currentStock" : "1500",
+					"minDesiredStockStorage" : "1000",
+					"maxDesiredStockStorage" : "2000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "5",
+					"name" : "Tuborg",
+					"purchasePrice" : "130",
+					"sellPrice" : "240",
+					"currentStock" : "1000",
+					"minDesiredStockStorage" : "1000",
+					"maxDesiredStockStorage" : "2500",
+					"taxRate" : "10"
+				}, 
+				{
+					"id" : "6",
+					"name" : "Vranac",
+					"purchasePrice" : "70",
+					"sellPrice" : "140",
+					"currentStock" : "2000",
+					"minDesiredStockStorage" : "1000",
+					"maxDesiredStockStorage" : "2000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "7",
+					"name" : "Pizza",
+					"purchasePrice" : "100",
+					"sellPrice" : "170",
+					"currentStock" : "2500",
+					"minDesiredStockStorage" : "2000",
+					"maxDesiredStockStorage" : "3000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "8",
+					"name" : "Hamburger",
+					"purchasePrice" : "100",
+					"sellPrice" : "240",
+					"currentStock" : "3000",
+					"minDesiredStockStorage" : "2000",
+					"maxDesiredStockStorage" : "4000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "9",
+					"name" : "Ice cream",
+					"purchasePrice" : "60",
+					"sellPrice" : "120",
+					"currentStock" : "2000",
+					"minDesiredStockStorage" : "2000",
+					"maxDesiredStockStorage" : "3000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "10",
+					"name" : "Smirnoff",
+					"purchasePrice" : "150",
+					"sellPrice" : "320",
+					"currentStock" : "2000",
+					"minDesiredStockStorage" : "1500",
+					"maxDesiredStockStorage" : "3000",
+					"taxRate" : "20"
+				}, 
+				{
+					"id" : "11",
+					"name" : "Brandy",
+					"purchasePrice" : "50",
+					"sellPrice" : "150",
+					"currentStock" : "3000",
+					"minDesiredStockStorage" : "2000",
+					"maxDesiredStockStorage" : "4000",
+					"taxRate" : "10"
+				}, 
+				{
+					"id" : "12",
+					"name" : "Fresh orange juice",
+					"purchasePrice" : "150",
+					"sellPrice" : "340",
+					"currentStock" : "3000",
+					"minDesiredStockStorage" : "2000",
+					"maxDesiredStockStorage" : "4000",
+					"taxRate" : "20"
+				}
+			],
+			"tables" : [ 
+				{
+					"id" : "1",
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : "2",
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : "3",
+					"shape" : "square",
+					"busy" : false
+				}
+			]
+		}, 
+		{
+			"id" : "4",
+			"name" : "New Hall",
+			"articles" : [],
+			"tables" : [ 
+				{
+					"id" : 1,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 2,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 3,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 4,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 5,
+					"shape" : "circle",
+					"busy" : false
+				}
+			]
+		}
+	],
+	"numOfCashRegisters" : 4,
+	"cashRegisters" : [ 
+		{
+			"location" : "Main hall",
+			"type" : "IBM"
+		}, 
+		{
+			"location" : "Main hall",
+			"type" : "Comtrade"
+		}, 
+		{
+			"location" : "Small hall",
+			"type" : "Gigatron"
+		}, 
+		{
+			"location" : "Garden",
+			"type" : "DigitGroup"
+		}
+	],
+	"orderers" : [ 
+		{
+			"firstname" : "Aleksandar",
+			"lastname" : "Dincic",
+			"username" : "dimca",
+			"phone" : "0643232851",
+			"email" : "dimca@gmail.com",
+			"company" : "Yussop",
+			"state" : "Srbija",
+			"city" : "Jagodina",
+			"postalCode" : "15100",
+			"street" : "Budzino brdo",
+			"street_number" : "30",
+			"pib" : "776655432",
+			"company_number" : "765",
+			"daysForPaying" : "30",
+			"percentageOfRebate" : "10"
+		}, 
+		{
+			"firstname" : "Uros",
+			"lastname" : "Stankovic",
+			"username" : "kiu3",
+			"phone" : "0698765433",
+			"email" : "kiu@gmail.com",
+			"company" : "Gembleri",
+			"state" : "United Kingdom",
+			"city" : "London",
+			"postalCode" : "9876",
+			"street" : "Temasa",
+			"street_number" : "4001",
+			"pib" : "333333333",
+			"company_number" : "333",
+			"daysForPaying" : "30",
+			"percentageOfRebate" : "10"
+		}
+	],
+	"categories" : [ 
+		"Food", 
+		"Beverage", 
+		"Cutlery"
+	],
+	"subcategories" : [ 
+		"Food#Pasta", 
+		"Food#Meat", 
+		"Beverage#Coffee", 
+		"Beverage#Water", 
+		"Beverage#Juice", 
+		"Beverage#Soda", 
+		"Beverage#Alcohol", 
+		"Food#Dessert"
+	],
+	"sections" : [],
+}
+
+{
+	"firstname" : "Aleksandar",
+	"lastname" : "Dincic",
+	"username" : "dimca",
+	"password" : "Dimca123!",
+	"phone" : "0643232851",
+	"email" : "dimca@gmail.com",
+	"company_name" : "Yussop",
+	"state" : "Srbija",
+	"city" : "Jagodina",
+	"postal_code" : "15100",
+	"street" : "Budzino brdo",
+	"street_number" : "30",
+	"pib" : "776655432",
+	"company_number" : "765",
+	"image" : "data:image/jpeg;base64,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",
+	"verified" : 1,
+	"active" : true,
+	"category" : "shop",
+	"codes" : [ 
+		"222222", 
+		"333333", 
+		"444444", 
+		"888888"
+	],
+	"isPDV" : false,
+	"bankAccounts" : [ 
+		{
+			"account" : "444-444444444444-44",
+			"bank" : "Unicredit"
+		}
+	],
+	"numOfStorages" : 1,
+	"storages" : [ 
+		{
+			"id" : "1",
+			"name" : "Prodavnica",
+			"articles" : []
+		}
+	],
+	"numOfCashRegisters" : 1,
+	"cashRegisters" : [ 
+		{
+			"location" : "Prodavnica",
+			"type" : "IBM"
+		}
+	],
+	"orderers" : [],
+	"categories" : [],
+	"subcategories" : [],
+}
+
+{
+	"firstname" : "Uros",
+	"lastname" : "Stankovic",
+	"username" : "kiu3",
+	"password" : "Kiuu123!",
+	"phone" : "0698765433",
+	"email" : "kiu@gmail.com",
+	"company_name" : "Gembleri",
+	"state" : "United Kingdom",
+	"city" : "London",
+	"postal_code" : "9876",
+	"street" : "Temasa",
+	"street_number" : "4001",
+	"pib" : "333333333",
+	"company_number" : "333",
+	"image" : "data:image/jpeg;base64,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",
+	"verified" : 1,
+	"active" : true,
+	"category" : "catering facility",
+	"codes" : [ 
+		"333333"
+	],
+	"isPDV" : true,
+	"bankAccounts" : [ 
+		{
+			"account" : "777-777777777777-77",
+			"bank" : "Gemblerska banka"
+		}
+	],
+	"numOfStorages" : 6,
+	"storages" : [ 
+		{
+			"id" : "1",
+			"name" : "Kazino",
+			"articles" : [],
+			"tables" : [ 
+				{
+					"id" : 1,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 2,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 3,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 4,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 5,
+					"shape" : "circle",
+					"busy" : false
+				}
+			]
+		}, 
+		{
+			"id" : "2",
+			"name" : "Kladionica",
+			"articles" : [],
+			"tables" : [ 
+				{
+					"id" : 1,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 2,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 3,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 4,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 5,
+					"shape" : "circle",
+					"busy" : false
+				}
+			]
+		}, 
+		{
+			"id" : "3",
+			"name" : "Soccer",
+			"articles" : [],
+			"tables" : [ 
+				{
+					"id" : 1,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 2,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 3,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 4,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 5,
+					"shape" : "circle",
+					"busy" : false
+				}
+			]
+		}, 
+		{
+			"id" : "4",
+			"name" : "Mozzart",
+			"articles" : [],
+			"tables" : [ 
+				{
+					"id" : 1,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 2,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 3,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 4,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 5,
+					"shape" : "circle",
+					"busy" : false
+				}
+			]
+		}, 
+		{
+			"id" : "5",
+			"name" : "MaxBet",
+			"articles" : [],
+			"tables" : [ 
+				{
+					"id" : 1,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 2,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 3,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 4,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 5,
+					"shape" : "circle",
+					"busy" : false
+				}
+			]
+		}, 
+		{
+			"id" : "8",
+			"name" : "Meridian",
+			"articles" : [],
+			"tables" : [ 
+				{
+					"id" : 1,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 2,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 3,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 4,
+					"shape" : "square",
+					"busy" : false
+				}, 
+				{
+					"id" : 5,
+					"shape" : "circle",
+					"busy" : false
+				}
+			]
+		}
+	],
+	"numOfCashRegisters" : 3,
+	"cashRegisters" : [ 
+		{
+			"location" : "Kazino",
+			"type" : "IBM"
+		}, 
+		{
+			"location" : "Kazino",
+			"type" : "Comtrade"
+		}, 
+		{
+			"location" : "Kladionica",
+			"type" : "IBM"
+		}
+	],
+	"orderers" : [],
+	"categories" : [],
+	"subcategories" : [],
+}

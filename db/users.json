@@ -1,0 +1,35 @@
+{
+	"username" : "admin",
+	"password" : "admin",
+	"type" : "admin"
+}
+
+{
+	"username" : "kris",
+	"password" : "Kris123!",
+	"type" : "company",
+}
+
+{
+	"username" : "andrej",
+	"password" : "Andrej123!",
+	"type" : "customer"
+}
+
+{
+	"username" : "customer",
+	"password" : "Customer123!",
+	"type" : "customer",
+}
+
+{
+	"username" : "dimca",
+	"password" : "Dimca123!",
+	"type" : "company",
+}
+
+{
+	"username" : "kiu3",
+	"password" : "Kiuu123!",
+	"type" : "company",
+}

@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-sm-4">
+        &nbsp;
+    </div>
+    <div class="col-sm-4">
+        <br><br>
+        <h4 class="centerClass">Admin login</h4>
+        <div class="form-group">
+            <label for="username">Username: </label>
+            <input type="text" class="form-control" id="username" placeholder="Enter your username"  
+            [(ngModel)]="username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password: </label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password" 
+            [(ngModel)] = "password">
+        </div>
+        <br>
+        <div class="centerClass">
+            <button class="btn btn-primary" (click)="login()">&nbsp;&nbsp;Login&nbsp;&nbsp;</button>
+        </div>
+        <br>
+        <div class="centerClass">
+            Back on standard login form: <a href="/">Login</a>
+        </div>
+        <br>
+        <div class="centerClass">
+            <span class="alert alert-danger" *ngIf="errorMessage!=''">{{errorMessage}}</span>
+        </div>
+        <br><br><br><br>
+    </div>
+    <div class="col-sm-4">
+        &nbsp;
+    </div>
+</div>

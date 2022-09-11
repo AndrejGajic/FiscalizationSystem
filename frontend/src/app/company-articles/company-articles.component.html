@@ -1,0 +1,156 @@
+<div class="container-fluid">
+    <ul class="nav justify-content-center navbar-light bg-light">
+        <li class="nav-item">
+            <img [src]="company.image" height="60px" width="60px" style="margin-right: 50px;">
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="company-home">About company</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="company-orderers">Orderers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="company-goods">Goods and services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active bold" href="#">Article arrangement</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="company-tables">Table arrangement</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="company-bills">Bills</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="company-reports">Reports</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="change-password">Change password</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" (click)="logout($event)">Log out</a>
+        </li>
+    </ul>
+    <br><br>
+    <div class="row">
+        <div class="col-sm-2">
+            &nbsp;
+        </div>
+        <div class="col-sm-8 centerClass">
+            <ng-template #content let-modal>
+                <div class="modal-header">
+                  <h4 class="modal-title" id="modal-basic-title">Add article to category or subcategory</h4>
+                  <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-stripped table-bordered table-hover" *ngIf="addingToCategory">
+                        <thead>
+                            <tr>
+                                <th>Article name </th>
+                                <th>Add article to category {{category}} </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let article of myArticles">
+                                <td>{{article.name}}</td>
+                                <button class="btn" (click)="addArticleToCategory(article.name)">Add article</button>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-stripped table-bordered table-hover" *ngIf="addingToSubcategory">
+                        <thead>
+                            <tr>
+                                <th>Article name </th>
+                                <th>Add article to subcategory {{subcategory}} </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let article of myArticles">
+                                <td>{{article.name}}</td>
+                                <button class="btn" (click)="addArticleToSubcategory(article.name)">Add article</button>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                </div>
+              </ng-template>              
+              <hr>      
+            <h4 class="centerClass"><b>Article categories</b></h4>
+            <br>
+            <table class="table table-stripped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Category name </th>
+                        <th>Add article to this category </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let category of company.categories">
+                        <td>{{category}}</td>
+                        <td><button class="btn btn-success" (click)="addToCategory(category, content)">Add to category</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h4 class="centerClass"><b>Article subcategories</b></h4>
+            <br>
+            <table class="table table-stripped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Subcategory name </th>
+                        <th>Category name </th>
+                        <th>Add article to this category </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let subcategory of company.subcategories; let i = index;">
+                        <td>{{subcategoriesNames[i]}}</td>
+                        <td>{{subcategoriesCategory[i]}}</td>
+                        <td><button class="btn btn-success" (click)="addToSubcategory(subcategory, content)">Add to subcategory</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h4 class="centerClass"><b>Add new category</b></h4>
+            <table class="table table-stripped table-bordered table-hover">
+                <tbody>
+                    <tr>
+                        <td>Category name: </td>
+                        <td><input type="text" [(ngModel)]="newCategory"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="btn btn-primary" (click)="addCategory()">Add category</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h4 class="centerClass"><b>Add new subcategory</b></h4>
+            <table class="table table-stripped table-bordered table-hover">
+                <tbody>
+                    <tr>
+                        <td>Subcategory name: </td>
+                        <td><input type="text" [(ngModel)]="newSubcategoryName"></td>
+                    </tr>
+                    <tr>
+                        <td>Category of this subcategory: </td>
+                        <td><input type="text" [(ngModel)]="newSubcategoryCategory"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="btn btn-primary" (click)="addSubcategory()">Add subcategory</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <div class="centerClass">
+                <span class="alert alert-danger" *ngIf="errorMessage!=''">{{errorMessage}}</span>
+                <span class="alert alert-success" *ngIf="successMessage!=''">{{successMessage}}</span>
+            </div>
+            <br><br><br><br>
+        </div>
+        <div class="col-sm-2">
+            &nbsp;
+        </div>
+    </div>
+</div>

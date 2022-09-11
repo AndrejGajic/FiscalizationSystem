@@ -1,0 +1,93 @@
+<div class="container-fluid">
+    <ul class="nav justify-content-center navbar-light bg-light">
+        <li class="nav-item">
+            <a class="nav-link" href="customer-home">Companies and articles</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active bold" href="#">Bills</a>
+        </li>
+        <li>
+            <a class="nav-link" href="change-password">Change password</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" (click)="logout($event)">Log out</a>
+        </li>
+    </ul>
+    <br><br>
+    <div class="row">
+        <div class="col-sm-2">
+            &nbsp;
+        </div>
+        <ng-template #content let-modal>
+            <div class="modal-header">
+              <h4 class="modal-title" id="modal-basic-title">Bill info</h4>
+              <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-stripped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>Article ID </td>
+                            <td>Article name </td>
+                            <td>Amount </td>
+                            <td>Item price </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of currItems; let i = index">
+                            <td>{{i+1}}</td>
+                            <td>{{item.articleId}}</td>
+                            <td>{{item.articleName}}</td>
+                            <td>{{item.amount}}</td>
+                            <td>{{item.price}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </ng-template>
+        <div class="col-sm-8">
+            <h4 class="centerClass">All bills: </h4>
+            <br>
+            <table class="table table-stripped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <td>Bill ID </td>
+                        <td>Bill date </td>
+                        <td>Bill price </td>
+                        <td>Bill tax </td>
+                        <td>Company name </td>
+                        <td>Location </td>
+                        <td>Method of paying </td>
+                        <td>See more info</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let bill of bills">
+                        <td>{{bill.id}}</td>
+                        <td>{{bill.date}}</td>
+                        <td>{{bill.price}}</td>
+                        <td>{{bill.tax}}</td>
+                        <td>{{bill.companyName}}</td>
+                        <td>{{bill.storageName}}</td>
+                        <td>{{bill.payingMethod}}</td>
+                        <td><button class="btn btn-primary" (click)="open(bill.id, content)">See items of this bill</button></td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <div style="text-align: center">
+                <span class="alert alert-danger" *ngIf="errorMessage!=''">{{errorMessage}}</span>
+                <span class="alert alert-success" *ngIf="successMessage!=''">{{successMessage}}</span>
+            </div>
+            <br><br><br><br>
+        </div>
+        <div class="col-sm-2">
+            &nbsp;
+        </div>
+    </div>
+</div>
